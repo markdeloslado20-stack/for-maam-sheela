@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Ma'am Sheela</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #E8735A;
+            font-family: monospace;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            color: white;
+            font-size: 1.6rem;
+            margin-bottom: 6px;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+            font-weight: normal;
+            margin-bottom: 40px;
+        }
+
+        .letter {
+            background: white;
+            width: 90%;
+            max-width: 620px;
+            margin: 0 auto;
+            padding: 36px 20px; /* reduced side padding for smaller screens */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 5px solid #333;
+            box-sizing: border-box;
+        }
+
+        .letter p {
+            font-weight: bold;
+            font-size: 1.2rem; /* slightly smaller for mobile readability */
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 18px;
+        }
+
+        .spanny {
+            color: #E8735A;
+            font-size: 1.5rem; /* scaled down for mobile */
+        }
+
+        #btn {
+            display: block;
+            margin: 24px auto 0;
+            padding: 11px 28px;
+            background-color: #E8735A;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        #btn:hover {
+            background-color: #c95a40;
+            transform: translateY(-2px);
+        }
+
+        .cat, img {
+            position: fixed;
+            width: 120px; /* smaller for mobile */
+            bottom: 10px;
+            right: 10px;
+        }
+
+        #console {
+            padding: 5px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            overflow-x: auto; /* allows horizontal scroll on small screens */
+        }
+
+        .spannylet {
+            color: rgb(8, 8, 161);
+        }
+        .spannyvar {
+            color: rgb(41, 122, 216);
+        }
+        .spannyval {
+            color: orange;
+        }
+        .spannystat {
+            color: rgb(234, 0, 255);
+        }
+        .paren {
+            color: yellow;
+        }
+        .paragraph {
+            color: orange;
+        }
+        .stat2 {
+            color: aquamarine;
+        }
+
+        /* Mobile responsive tweaks */
+        @media (max-width: 480px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            h2 {
+                font-size: 0.85rem;
+            }
+
+            .letter {
+                padding: 20px 15px;
+            }
+
+            .letter p {
+                font-size: 1rem;
+            }
+
+            .spanny {
+                font-size: 1.2rem;
+            }
+
+            #btn {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+
+            .cat, img {
+                width: 100px;
+            }
+        }
+        .dollar {
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="cat"><img src="2d96bfd4a947bc64518bae765758144b.gif" alt="cat thanks"></div>
+    <h1>For Ma'am Sheela 🧡</h1>
+    <h2>Created by Mark Adrian — ICT 11 C</h2>
+
+    <div class="letter">
+        <p>
+            <span class="spanny">M</span>a'am, I am very grateful po na kayo po ang naging teacher namin sa Computer Programming. Kahit po na maraming araw na naiinis kayo sa amin dahil sa kakulitan namin, patuloy parin po kayo sa pagtuturo sa amin hindi lang sa pag-aaral kundi pati sa tamang asal.
+        </p>
+        <p>
+            <span class="spanny">A</span>ng bawat sinasabi ninyo po ay tumatatak sa isip namin, at guilty po kami minsan kasi alam namin na makukulit lang po talaga kami. Pero kahit ganun, nagpapasalamat po ako kasi kayo po ang isa sa mga unang teacher na nagbigay sa akin ng aral na ipagpatuloy ang pangarap ko.
+        </p>
+        <p>
+            <span class="spanny">T</span>hank you very much po, Ma'am. Sa subject ninyo po ako nakakaramdam ng mas magaan na pakiramdam sa klase. Siguro po dahil gusto ko talaga ang strand na ito.
+        </p>
+        <p>
+            <span class="spanny">S</span>ana po ang huling quarter na ito ay maging inspirasyon mo po para magpatuloy sa pagtuturo at paghubog ng mga estudyante.🧡
+            <div id="console">
+        </p>
+        <pre>
+            <span class="spannylet">let</span> <span class="spannyvar">teacher</span> = <span class="spannyval">"Ma'am"</span>;
+            <span class="spannylet">let</span> <span class="spannyvar">name</span> = <span class="spannyval">"Sheela"</span>;
+            <span class="spannylet">let</span> <span class="spannyvar">best</span> = <span style="color: aqua;">true</span>;
+
+            <span class="spannystat">if</span> <span class="paren">(</span><span class="stat2">best</span><span class="paren">)</span> {
+            <span class="stat2">alert</span><span class="paren">(</span><span class="paragraph">`Thank you for teaching us, <span class="dollar">$</span>{teacher} <span class="dollar">$</span>{name}!`</span><span class="paren">)</span>;
+            }
+
+            <span style="color: green;">// else statement doesn't exist for Ma'am Sheela!</span>
+        </pre>
+        </p>
+                <button id="btn" onclick="alert(`Thank you for teaching us, Ma'am Sheela!`)">
+            Output 🧡
+        </button>
+        </div>
+
+        <button id="btn" onclick="alert(`I will miss you po, Ma'am, dahil magpapatransfer na po ako sa ibang school. I will always cherish every lesson you taught us. I will keep them saved in my CPU (brain) for the rest of my life 🧡`)">
+            Click Me! 💌
+        </button>
+    </div>
+
+</body>
+</html>
